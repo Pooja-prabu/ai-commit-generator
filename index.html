@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Commit Message Generator — Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>AI Commit Message Generator</h1>
+      <p class="sub">Paste a git diff, code snippet or error log — get commit, PR title, PR description, and summary.</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <label for="inputText">Code / Diff / Error log</label>
+        <textarea id="inputText" placeholder="Paste a git diff or code snippet here..." spellcheck="false"></textarea>
+
+        <div class="controls">
+          <select id="commitType">
+            <option value="">Auto detect</option>
+            <option value="feat">feat</option>
+            <option value="fix">fix</option>
+            <option value="chore">chore</option>
+            <option value="docs">docs</option>
+            <option value="refactor">refactor</option>
+          </select>
+
+          <button id="generateBtn">Generate</button>
+        </div>
+      </section>
+
+      <section class="output-section">
+        <h2>Generated outputs</h2>
+
+        <div class="card">
+          <h3>Commit message</h3>
+          <pre id="commitOutput" class="output-box">—</pre>
+          <button class="copyBtn" data-target="commitOutput">Copy</button>
+        </div>
+
+        <div class="card">
+          <h3>PR title</h3>
+          <pre id="prTitleOutput" class="output-box">—</pre>
+          <button class="copyBtn" data-target="prTitleOutput">Copy</button>
+        </div>
+
+        <div class="card">
+          <h3>PR description</h3>
+          <pre id="prDescOutput" class="output-box multiline">—</pre>
+          <button class="copyBtn" data-target="prDescOutput">Copy</button>
+        </div>
+
+        <div class="card">
+          <h3>Summary</h3>
+          <pre id="summaryOutput" class="output-box">—</pre>
+          <button class="copyBtn" data-target="summaryOutput">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>Prototype • For hackathon/demo use. Do not expose API keys publicly.</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

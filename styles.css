@@ -1,0 +1,40 @@
+:root{
+  --bg: #f6f8fa;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --border: #e6e9ef;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:#111}
+.container{max-width:900px;margin:28px auto;padding:20px}
+header h1{margin:0;font-size:1.6rem}
+.sub{color:var(--muted);margin-top:6px}
+
+.input-section{margin-top:18px}
+label{display:block;color:var(--muted);margin-bottom:8px}
+textarea{
+  width:100%;
+  min-height:200px;
+  padding:12px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  background:var(--card);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size:14px;
+  resize:vertical;
+}
+
+.controls{display:flex;gap:12px;margin-top:10px;align-items:center}
+select{padding:8px;border-radius:6px;border:1px solid var(--border);background:var(--card)}
+button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+button:active{transform:translateY(1px)}
+
+.output-section{margin-top:28px}
+.card{background:var(--card);border:1px solid var(--border);padding:12px;border-radius:8px;margin-bottom:12px}
+.output-box{white-space:pre-wrap;padding:8px;margin:6px 0;border-radius:6px;background:#fafafa;border:1px dashed var(--border);min-height:40px}
+.multiline{min-height:80px}
+.copyBtn{background:transparent;color:var(--accent);border:1px solid var(--border);padding:6px 8px;border-radius:6px;cursor:pointer}
+footer{margin-top:18px;color:var(--muted);font-size:13px}
