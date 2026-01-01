@@ -99,6 +99,7 @@ PORT	Backend server port
 
 ⚠️ .env is ignored using .gitignore for security.
 
+```
 💡 Why this project?
 
 Solves a real developer pain point
@@ -128,7 +129,3 @@ Multi-language support
 Built by Pooja Prabu
 For learning, hackathons, and real-world developer productivity.
 ```
-
-
-
-
