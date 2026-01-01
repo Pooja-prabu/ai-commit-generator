@@ -110,7 +110,7 @@ Hackathon-ready
 Resume-worthy
 
 Easy to extend
-
+```
 🔮 Future Improvements
 
 GitHub PR auto-creation
@@ -127,6 +127,7 @@ Multi-language support
 
 Built by Pooja Prabu
 For learning, hackathons, and real-world developer productivity.
+```
 
 
 
