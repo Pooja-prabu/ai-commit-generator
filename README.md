@@ -124,8 +124,4 @@ Download PR as Markdown
 
 Multi-language support
 
-👩‍💻 Author
-
-Built by Pooja Prabu
-For learning, hackathons, and real-world developer productivity.
 ```
